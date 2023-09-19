@@ -23,4 +23,7 @@ db.connect((error) => {
   }
 });
 
+// Close the connection when done
+db.end();
+
 module.exports = db;
